@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NDSAW | Home</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0a1931;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #001f3f;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: black;
+            text-align: center;
+            padding: 100px 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+        }
+
+        .hero-buttons {
+            margin-top: 15px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        /* NEED HELP? Section */
+        .need-help {
+            background-color: #d1001f; /* Bright Red */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .need-help h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .need-help p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .need-help .btn {
+            background-color: #1AA7EC; /* Blue */
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Why Choose NDSAW */
+        .why-choose {
+            background-color: #222;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .why-choose h2 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .feature {
+            text-align: center;
+            width: 45%;
+            margin-bottom: 20px;
+        }
+
+        /* Short Cyber Security Tips Section */
+        .cyber-tips {
+            background-color: #008000; /* Green */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .cyber-tips h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .cyber-tips ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cyber-tips li {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #001f3f;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+
+            .feature {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="NDSAW Logo"> 
+            <span>NDSAW साहस. सुरक्षा. समाधान.</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Officer's Portal</a></li>
+            <li><a href="#">Helpline</a></li>
+            <li><a href="#">Report Incident</a></li>
+            <li><a href="#">Notice Board</a></li>
+            <li><a href="#">Operations</a></li>
+            <li><a href="#">Intelligence Services</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>National Digital Security & Analysis Wing</h1>
+        <div class="hero-buttons">
+            <a href="#" class="btn blue">Learn More</a>
+            <a href="#" class="btn red">Contact Us</a>
+        </div>
+        <p class="hero-subtext">If you're experiencing cyberbullying, hacking, or threats, NDSAW is here to assist you.</p>
+        <a href="#" class="report-incident">Report an Incident</a>
+    </header>
+
+    <!-- Need Help? Section -->
+    <section class="need-help">
+        <h2>Need Help?</h2>
+        <p>If you're in danger or need urgent cybersecurity assistance, contact us immediately. Our team is ready to help you.</p>
+        <a href="#" class="btn">Get Assistance Now</a>
+    </section>
+
+    <!-- Why Choose NDSAW Section -->
+    <section class="why-choose">
+        <h2>Why Choose NDSAW?</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>100% Anonymous & Confidential</h3>
+                <p>Your identity is always protected while reporting an issue...</p>
+            </div>
+            <div class="feature">
+                <h3>Highly Secure System</h3>
+                <p>Our security protocols ensure the complete safety of data...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Short Cyber Security Tips -->
+    <section class="cyber-tips">
+        <h2>Short Cyber Security Tips</h2>
+        <ul>
+            <li>🔒 Use strong, unique passwords for each account.</li>
+            <li>⚠️ Don't click on unknown links or attachments.</li>
+            <li>🛡️ Enable two-factor authentication whenever possible.</li>
+            <li>📱 Keep your software and apps updated regularly.</li>
+            <li>🕵️‍♂️ Be cautious while sharing personal information online.</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>📧 Email: thesistagency2016@gmail.com | 📞 Phone: +91-7044705534</p>
+        <p>© 2025 NDSAW. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
